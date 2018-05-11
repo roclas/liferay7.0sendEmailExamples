@@ -1,0 +1,4 @@
+Bundle-Activator: com.roclas.emailActivator.Activator
+Bundle-Name: email-activator
+Bundle-SymbolicName: com.roclas.emailActivator
+Bundle-Version: 1.0.0
