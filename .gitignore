@@ -1,5 +1,9 @@
 .gradle/
 build/
-target/On branch master
 .idea/
 email-activator.iml
+/bin/
+.classpath
+.project
+.settings/
+
