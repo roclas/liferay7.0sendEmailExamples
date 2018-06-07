@@ -10,6 +10,7 @@ dependencies {
 	compileOnly group: "javax.mail", name: "mail", version: "1.4"
 	compileOnly 'biz.aQute.bnd:biz.aQute.bndlib:3.1.0'
 	compileOnly 'com.liferay:com.liferay.portal.configuration.metatype:2.0.0'
+	compile group: "org.apache.felix", name:"org.apache.felix.configadmin", version:"1.8.0"
 }
 
 

@@ -4,8 +4,16 @@ import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClass
 
 import aQute.bnd.annotation.metatype.Meta;
 
-@ExtendedObjectClassDefinition( category = "productivity", scope = ExtendedObjectClassDefinition.Scope.GROUP)
-@Meta.OCD(id = "com.roclas.config.ModelListenersConfiguration", localization = "content/Language", name = "%com.roclas.config.modellistenerconfiguration")
+@ExtendedObjectClassDefinition( 
+		category = "productivity" 
+		,factoryInstanceLabelAttribute = "groupId"
+)
+@Meta.OCD(
+		id = "com.roclas.config.ModelListenersConfiguration",
+		localization = "content/Language", 
+		name = "modellistenerconfigurationByGroupId",
+		factory = true
+)
 public interface ModelListenersConfiguration {
 
     @Meta.AD(
@@ -20,7 +28,11 @@ public interface ModelListenersConfiguration {
     )
     public Boolean emailOnDLEntryExpiration();
 
-
-
+    @Meta.AD(
+        deflt = "0" ,
+        required =true,
+        name="groupId"
+    )
+    public String groupId();
 
 }
